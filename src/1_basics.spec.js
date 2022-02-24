@@ -15,6 +15,13 @@ afterAll(() => {
 });
 
 describe("sum", () => {
+  beforeEach(() => {
+    console.log("se ejecuta antes de cada test del bloque describe");
+  });
+  afterEach(() => {
+    console.log("se ejecuta después de cada test del bloque describe");
+  });
+
   it("5 + 5 equals 10", () => {
     // ARRANGE
     const input1 = 5;
